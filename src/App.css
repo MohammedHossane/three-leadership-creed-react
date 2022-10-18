@@ -1,38 +1,573 @@
-.App {
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  background-color: #f1f1f1;
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5
+}
+
+b {
+  font-weight: bolder;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h1,
+h3,
+h5 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0
+}
+
+h1 {
+  font-size: 36px
+}
+
+h3 {
+  font-size: 24px
+}
+
+h5 {
+  font-size: 18px
+}
+
+.texta {
+  padding: 0.01em 16px
+}
+
+.bigoutsidediv {
+  max-width: 980px;
+  max-width: 1500px;
+}
+
+.box {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 16px;
+  color: #000;
+  background-color: #fff;
+}
+
+.theposition {
+  padding: 0.01em 16px;
   text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(90deg,
+          rgba(255, 0, 0, 1) 0%,
+          rgba(255, 154, 0, 1) 10%,
+          rgba(208, 222, 33, 1) 20%,
+          rgba(79, 220, 74, 1) 30%,
+          rgba(63, 218, 216, 1) 40%,
+          rgba(47, 201, 226, 1) 50%,
+          rgba(28, 127, 238, 1) 60%,
+          rgba(95, 21, 242, 1) 70%,
+          rgba(186, 12, 248, 1) 80%,
+          rgba(251, 7, 217, 1) 90%,
+          rgba(255, 0, 0, 1) 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.animate-charcters {
+  text-transform: uppercase;
+  background-image: linear-gradient(90deg,
+          rgba(255, 0, 0, 1) 0%,
+          rgba(255, 154, 0, 1) 10%,
+          rgba(208, 222, 33, 1) 20%,
+          rgba(79, 220, 74, 1) 30%,
+          rgba(63, 218, 216, 1) 40%,
+          rgba(47, 201, 226, 1) 50%,
+          rgba(28, 127, 238, 1) 60%,
+          rgba(95, 21, 242, 1) 70%,
+          rgba(186, 12, 248, 1) 80%,
+          rgba(251, 7, 217, 1) 90%,
+          rgba(255, 0, 0, 1) 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.animate-charctersa {
+  text-transform: uppercase;
+  background-image: linear-gradient(90deg,
+          rgba(255, 0, 0, 1) 0%,
+          rgba(255, 154, 0, 1) 10%,
+          rgba(208, 222, 33, 1) 20%,
+          rgba(79, 220, 74, 1) 30%,
+          rgba(63, 218, 216, 1) 40%,
+          rgba(47, 201, 226, 1) 50%,
+          rgba(28, 127, 238, 1) 60%,
+          rgba(95, 21, 242, 1) 70%,
+          rgba(186, 12, 248, 1) 80%,
+          rgba(251, 7, 217, 1) 90%,
+          rgba(255, 0, 0, 1) 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 15px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+@keyframes textclip {
   to {
-    transform: rotate(360deg);
+      background-position: 200% center;
+  }
+}
+
+#animationbutton {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: auto;
+  margin: auto;
+  position: absolute;
+  top: 80%;
+  text-align: center;
+  left: 35%;
+  display: block;
+
+}
+
+#animationbutton:hover {
+  background-image: linear-gradient(90deg,
+          rgba(255, 0, 0, 1) 0%,
+          rgba(255, 154, 0, 1) 10%,
+          rgba(208, 222, 33, 1) 20%,
+          rgba(79, 220, 74, 1) 30%,
+          rgba(63, 218, 216, 1) 40%,
+          rgba(47, 201, 226, 1) 50%,
+          rgba(28, 127, 238, 1) 60%,
+          rgba(95, 21, 242, 1) 70%,
+          rgba(186, 12, 248, 1) 80%,
+          rgba(251, 7, 217, 1) 90%,
+          rgba(255, 0, 0, 1) 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 15px;
+  animation: buttona 3s linear infinite;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  margin: auto
+}
+
+@keyframes buttona {
+  to {
+      background-position: 200% center;
+  }
+}
+
+#animationbuttons {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: auto;
+  margin: auto;
+  position: absolute;
+  top: 80%;
+  text-align: center;
+  left: 55%;
+  display: block;
+
+}
+
+#animationbuttons:hover {
+  background-image: linear-gradient(90deg,
+          rgba(255, 0, 0, 1) 0%,
+          rgba(255, 154, 0, 1) 10%,
+          rgba(208, 222, 33, 1) 20%,
+          rgba(79, 220, 74, 1) 30%,
+          rgba(63, 218, 216, 1) 40%,
+          rgba(47, 201, 226, 1) 50%,
+          rgba(28, 127, 238, 1) 60%,
+          rgba(95, 21, 242, 1) 70%,
+          rgba(186, 12, 248, 1) 80%,
+          rgba(251, 7, 217, 1) 90%,
+          rgba(255, 0, 0, 1) 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 15px;
+  animation: buttona 3s linear infinite;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  margin: auto;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  /* animation: img 3s infinite; */
+}
+
+@keyframes img {
+  from {
+      left: -30px;
+  }
+
+  to {
+      left: 110%
+  }
+}
+
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  html {
+      box-sizing: border-box;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      overflow-x: hidden;
+      font-family: Verdana, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+  }
+
+  body {
+      font-family: "Raleway", sans-serif;
+      color: #000;
+      background-color: #f1f1f1;
+      margin: 0;
+      font-family: Verdana, sans-serif;
+      font-size: 15px;
+      line-height: 1.5
+  }
+
+  b {
+      font-weight: bolder;
+      font-family: "Segoe UI", Arial, sans-serif;
+  }
+
+  h1,
+  h3,
+  h5 {
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-weight: 400;
+      margin: 10px 0
+  }
+
+  h1 {
+      font-size: 36px
+  }
+
+  h3 {
+      font-size: 24px
+  }
+
+  h5 {
+      font-size: 18px
+  }
+
+  .texta {
+      padding: 0.01em 16px
+  }
+
+  .bigoutsidediv {
+      max-width: 980px;
+      max-width: 1500px;
+  }
+
+  .box {
+      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+      margin: 16px;
+      color: #000;
+      background-color: #fff;
+  }
+
+  .theposition {
+      padding: 0.01em 16px;
+      text-align: center;
+      padding-top: 32px;
+      padding-bottom: 32px
+  }
+
+  .animate-charcter {
+      text-transform: uppercase;
+      background-image: linear-gradient(90deg,
+              rgba(255, 0, 0, 1) 0%,
+              rgba(255, 154, 0, 1) 10%,
+              rgba(208, 222, 33, 1) 20%,
+              rgba(79, 220, 74, 1) 30%,
+              rgba(63, 218, 216, 1) 40%,
+              rgba(47, 201, 226, 1) 50%,
+              rgba(28, 127, 238, 1) 60%,
+              rgba(95, 21, 242, 1) 70%,
+              rgba(186, 12, 248, 1) 80%,
+              rgba(251, 7, 217, 1) 90%,
+              rgba(255, 0, 0, 1) 100%);
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      /* text-fill-color: transparent; */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 3s linear infinite;
+      display: inline-block;
+      font-size: 60px;
+  }
+
+  .animate-charcters {
+      text-transform: uppercase;
+      background-image: linear-gradient(90deg,
+              rgba(255, 0, 0, 1) 0%,
+              rgba(255, 154, 0, 1) 10%,
+              rgba(208, 222, 33, 1) 20%,
+              rgba(79, 220, 74, 1) 30%,
+              rgba(63, 218, 216, 1) 40%,
+              rgba(47, 201, 226, 1) 50%,
+              rgba(28, 127, 238, 1) 60%,
+              rgba(95, 21, 242, 1) 70%,
+              rgba(186, 12, 248, 1) 80%,
+              rgba(251, 7, 217, 1) 90%,
+              rgba(255, 0, 0, 1) 100%);
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      /* text-fill-color: transparent; */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 3s linear infinite;
+      display: inline-block;
+      font-size: 24px;
+  }
+
+  .animate-charctersa {
+      text-transform: uppercase;
+      background-image: linear-gradient(90deg,
+              rgba(255, 0, 0, 1) 0%,
+              rgba(255, 154, 0, 1) 10%,
+              rgba(208, 222, 33, 1) 20%,
+              rgba(79, 220, 74, 1) 30%,
+              rgba(63, 218, 216, 1) 40%,
+              rgba(47, 201, 226, 1) 50%,
+              rgba(28, 127, 238, 1) 60%,
+              rgba(95, 21, 242, 1) 70%,
+              rgba(186, 12, 248, 1) 80%,
+              rgba(251, 7, 217, 1) 90%,
+              rgba(255, 0, 0, 1) 100%);
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      /* text-fill-color: transparent; */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 3s linear infinite;
+      display: inline-block;
+      font-size: 15px;
+  }
+
+  @keyframes textclip {
+      to {
+          background-position: 200% center;
+      }
+  }
+
+  #animationbutton {
+      background-color: black;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-left: auto;
+      margin: auto;
+      position: absolute;
+      top: 80%;
+      text-align: center;
+      left: 35%;
+      display: block;
+
+  }
+
+  #animationbutton:hover {
+      background-image: linear-gradient(90deg,
+              rgba(255, 0, 0, 1) 0%,
+              rgba(255, 154, 0, 1) 10%,
+              rgba(208, 222, 33, 1) 20%,
+              rgba(79, 220, 74, 1) 30%,
+              rgba(63, 218, 216, 1) 40%,
+              rgba(47, 201, 226, 1) 50%,
+              rgba(28, 127, 238, 1) 60%,
+              rgba(95, 21, 242, 1) 70%,
+              rgba(186, 12, 248, 1) 80%,
+              rgba(251, 7, 217, 1) 90%,
+              rgba(255, 0, 0, 1) 100%);
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 3s linear infinite;
+      display: inline-block;
+      font-size: 15px;
+      animation: buttona 3s linear infinite;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      transition-duration: 0.4s;
+      margin: auto
+  }
+
+  @keyframes buttona {
+      to {
+          background-position: 200% center;
+      }
+  }
+
+  #animationbuttons {
+      background-color: black;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-left: auto;
+      margin: auto;
+      position: absolute;
+      top: 80%;
+      text-align: center;
+      left: 55%;
+      display: block;
+
+  }
+
+  #animationbuttons:hover {
+      background-image: linear-gradient(90deg,
+              rgba(255, 0, 0, 1) 0%,
+              rgba(255, 154, 0, 1) 10%,
+              rgba(208, 222, 33, 1) 20%,
+              rgba(79, 220, 74, 1) 30%,
+              rgba(63, 218, 216, 1) 40%,
+              rgba(47, 201, 226, 1) 50%,
+              rgba(28, 127, 238, 1) 60%,
+              rgba(95, 21, 242, 1) 70%,
+              rgba(186, 12, 248, 1) 80%,
+              rgba(251, 7, 217, 1) 90%,
+              rgba(255, 0, 0, 1) 100%);
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 3s linear infinite;
+      display: inline-block;
+      font-size: 15px;
+      animation: buttona 3s linear infinite;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      transition-duration: 0.4s;
+      margin: auto;
+  }
+
+  img {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      /* animation: img 3s infinite; */
+  }
+
+  @keyframes img {
+      from {
+          left: -30px;
+      }
+
+      to {
+          left: 110%
+      }
   }
 }
