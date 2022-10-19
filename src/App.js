@@ -1,6 +1,14 @@
 import { Fragment } from "react";
-import Home from './pages/Home/Home';
+import Home from "./pages/Home/Home";
+import Creed from "./pages/Creed/Creed";
 import "./App.css";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import NavBar from "./components/Navbar/NavBar";
 
 export const Buttons = () => {
   function playAnimation() {
@@ -36,7 +44,15 @@ export const Buttons = () => {
 export default function App() {
   return (
     <div>
-      <Home />
+      <Router>
+        <NavBar />
+        <Routes>
+
+          <Route path="/home" element={<Home />} />
+          <Route path="/creed" element={<Creed />} />
+          <Route path="*" element={<Navigate to="/home" />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

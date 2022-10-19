@@ -1,0 +1,15 @@
+.NavBar{
+    background-color: blue;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+
+
+}
+
+
+a{
+    color: #fff;
+}
